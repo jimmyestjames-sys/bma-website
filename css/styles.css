@@ -1288,6 +1288,31 @@ textarea.form-control {
   overflow: hidden;
 }
 
+/* ── FAQ Section ─────────────────────────────────────────── */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 800px;
+}
+
+.faq-item {
+  border-left: 3px solid var(--color-accent);
+  padding-left: var(--space-6);
+}
+
+.faq-question {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin-bottom: var(--space-2);
+}
+
+.faq-answer {
+  color: var(--color-gray-600);
+  font-size: var(--text-sm);
+}
+
 /* ── Large-screen enhancements ───────────────────────────── */
 @media (min-width: 1440px) {
   :root {

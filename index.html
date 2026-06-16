@@ -26,18 +26,20 @@
 
   <!-- Fonts -->
 
-  <link rel="stylesheet" href="/css/styles.css?v=5">
+  <link rel="stylesheet" href="/css/styles.css?v=6">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": ["ProfessionalService", "LocalBusiness"],
     "name": "BE MY A11Y, LLC",
     "url": "https://bemya11y.com",
     "email": "contact@bemya11y.com",
     "logo": "https://bemya11y.com/images/logo.png",
+    "image": "https://bemya11y.com/images/logo.png",
     "description": "Web accessibility consulting, WCAG audits, accessible web design, and AI-assisted accessibility scanning for businesses nationwide.",
+    "slogan": "Inclusive design and AI-powered accessibility services — built to make the web work for everyone.",
     "areaServed": "US",
     "priceRange": "$$",
     "address": {
@@ -48,15 +50,41 @@
       "postalCode": "30040",
       "addressCountry": "US"
     },
+    "founder": {
+      "@type": "Person",
+      "name": "James",
+      "jobTitle": "Founder & CEO",
+      "email": "james@bemya11y.com"
+    },
+    "knowsAbout": [
+      "Web Accessibility", "WCAG 2.1", "ADA Compliance", "Section 508",
+      "European Accessibility Act", "Inclusive Design",
+      "AI-Assisted Accessibility Scanning", "Accessibility Audits",
+      "Screen Reader Compatibility", "Accessible Web Design"
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Accessibility Services",
       "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Web Design & Revamp"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Accessibility Audits"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Software Monitoring"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI-Assisted Accessibility Scanning"}}
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Web Design & Revamp", "description": "Modern, accessible websites built to WCAG 2.1 AA standards from day one."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Accessibility Audits", "description": "Comprehensive WCAG 2.1, Section 508, and ADA reviews with prioritized remediation reports."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Software Monitoring & Vendor Oversight", "description": "Ongoing accessibility compliance monitoring and vendor deliverable review."}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI-Assisted Accessibility Scanning", "description": "Automated barrier detection powered by AI, reviewed by a human accessibility expert."}}
       ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BE MY A11Y",
+    "url": "https://bemya11y.com",
+    "description": "Web accessibility consulting and inclusive design services for businesses nationwide.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "BE MY A11Y, LLC",
+      "url": "https://bemya11y.com"
     }
   }
   </script>
@@ -288,6 +316,6 @@
   <!-- ── Footer ─────────────────────────────────────────── -->
   <footer class="site-footer" role="contentinfo"></footer>
 
-  <script src="/js/site.js?v=5"></script>
+  <script src="/js/site.js?v=6"></script>
 </body>
 </html>
