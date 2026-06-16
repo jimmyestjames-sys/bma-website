@@ -598,7 +598,7 @@ p { max-width: 68ch; }
 }
 
 .section-header p {
-  margin-top: var(--space-4);
+  margin-top: var(--space-6);
   color: var(--color-gray-600);
 }
 
@@ -755,7 +755,7 @@ p { max-width: 68ch; }
 
 .step h3 {
   font-size: var(--text-xl);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-4);
 }
 
 .step p {
@@ -795,7 +795,7 @@ p { max-width: 68ch; }
 
 .principle h3 {
   font-size: var(--text-xl);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-4);
 }
 
 .principle p {
@@ -814,7 +814,7 @@ p { max-width: 68ch; }
 
 .cta-band h2 {
   color: var(--color-white);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
 }
 
 .cta-band h2 em {
@@ -830,6 +830,7 @@ p { max-width: 68ch; }
 
 .cta-band .btn-group {
   justify-content: center;
+  margin-bottom: var(--space-10);
 }
 
 .cta-band .email-link {
