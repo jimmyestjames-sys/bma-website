@@ -3,13 +3,128 @@
    WCAG 2.2 AA compliant
    ============================================================ */
 
+/* ── Halyard Font Faces ──────────────────────────────────── */
+@font-face {
+  font-family: 'Halyard Display';
+  src: url('/fonts/HalyardDisplay-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Display';
+  src: url('/fonts/HalyardDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Display';
+  src: url('/fonts/HalyardDisplay-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Display';
+  src: url('/fonts/HalyardDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Display';
+  src: url('/fonts/HalyardDisplay-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Display';
+  src: url('/fonts/HalyardDisplay-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Display';
+  src: url('/fonts/HalyardDisplay-SemiBoldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Display';
+  src: url('/fonts/HalyardDisplay-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Display';
+  src: url('/fonts/HalyardDisplay-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Halyard Text';
+  src: url('/fonts/HalyardText-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Text';
+  src: url('/fonts/HalyardText-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Text';
+  src: url('/fonts/HalyardText-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Text';
+  src: url('/fonts/HalyardText-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Text';
+  src: url('/fonts/HalyardText-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Text';
+  src: url('/fonts/HalyardText-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Halyard Text';
+  src: url('/fonts/HalyardText-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* ── Custom Properties ───────────────────────────────────── */
 :root {
   --color-black:        #0d0d0d;
   --color-white:        #ffffff;
-  --color-accent:       #0047ab;       /* primary blue */
-  --color-accent-dark:  #003080;       /* hover / focus */
-  --color-accent-light: #e8f0fe;       /* tinted backgrounds */
+  --color-accent:       #7710D8;       /* primary purple */
+  --color-accent-dark:  #5508b0;       /* hover / focus */
+  --color-accent-light: #f0e6ff;       /* tinted backgrounds */
   --color-gray-100:     #f5f5f5;
   --color-gray-200:     #e5e5e5;
   --color-gray-400:     #9ca3af;
@@ -18,8 +133,8 @@
   --color-success:      #15803d;
   --color-error:        #b91c1c;
 
-  --font-display: 'Halyard Display', 'Georgia', serif;
-  --font-body:    'Halyard Text', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Halyard Display', system-ui, sans-serif;
+  --font-body:    'Halyard Text', system-ui, sans-serif;
 
   --text-xs:   0.75rem;
   --text-sm:   0.875rem;
@@ -412,7 +527,7 @@ p { max-width: 68ch; }
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 60% 40%, rgba(0,71,171,.25) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 60% 40%, rgba(119,16,216,.30) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -427,7 +542,7 @@ p { max-width: 68ch; }
 
 .hero h1 em {
   font-style: normal;
-  color: #6fa3ff;
+  color: #c4b5fd;
 }
 
 .hero .lead {
@@ -687,7 +802,7 @@ p { max-width: 68ch; }
 
 .cta-band h2 em {
   font-style: normal;
-  color: #6fa3ff;
+  color: #c4b5fd;
 }
 
 .cta-band p {
@@ -869,7 +984,7 @@ p { max-width: 68ch; }
 .form-control:focus {
   border-color: var(--color-accent);
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0,71,171,.2);
+  box-shadow: 0 0 0 3px rgba(119,16,216,.2);
 }
 
 textarea.form-control {
