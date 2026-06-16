@@ -1,21 +1,82 @@
 /* BE MY A11Y — site.js
-   Accessible interactions: mobile nav, contact form, live regions
+   Shared header/footer injection, mobile nav, contact form, live regions.
    No dependencies. */
 
 (function () {
   'use strict';
 
+  /* ── Shared Header & Footer ─────────────────────────────── */
+  var headerHTML = [
+    '<div class="container">',
+    '  <a href="/" class="site-logo" aria-label="BE MY A11Y — Home">',
+    '    <img src="/images/logo.png" alt="" class="site-logo-img">',
+    '  </a>',
+    '  <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation menu">',
+    '    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">',
+    '      <line x1="3" y1="6"  x2="21" y2="6"/>',
+    '      <line x1="3" y1="12" x2="21" y2="12"/>',
+    '      <line x1="3" y1="18" x2="21" y2="18"/>',
+    '    </svg>',
+    '  </button>',
+    '  <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">',
+    '    <a href="/services">Services</a>',
+    '    <a href="/accessibility">Accessibility</a>',
+    '    <a href="/about">About</a>',
+    '    <a href="/contact">Contact</a>',
+    '  </nav>',
+    '</div>'
+  ].join('\n');
+
+  var footerHTML = [
+    '<div class="container">',
+    '  <div class="footer-grid">',
+    '    <div class="footer-brand">',
+    '      <img src="/images/logo.png" alt="BE MY A11Y" class="footer-logo">',
+    '      <p>Inclusive design and AI-powered accessibility services — built to make the web work for everyone.</p>',
+    '    </div>',
+    '    <nav aria-label="Footer pages">',
+    '      <div class="footer-col">',
+    '        <h4>Pages</h4>',
+    '        <ul>',
+    '          <li><a href="/">Home</a></li>',
+    '          <li><a href="/services">Services</a></li>',
+    '          <li><a href="/accessibility">Accessibility</a></li>',
+    '          <li><a href="/about">About</a></li>',
+    '          <li><a href="/contact">Contact</a></li>',
+    '        </ul>',
+    '      </div>',
+    '    </nav>',
+    '    <div class="footer-col">',
+    '      <h4>Contact</h4>',
+    '      <ul>',
+    '        <li><a href="mailto:contact@bemya11y.com">contact@bemya11y.com</a></li>',
+    '        <li>Nationwide — remote-friendly</li>',
+    '        <li>Response within 1 business day</li>',
+    '      </ul>',
+    '    </div>',
+    '  </div>',
+    '  <div class="footer-meta">',
+    '    <p><small style="color:#000000;">&copy; 2026 BE MY A11Y, LLC. All rights reserved.</small></p>',
+    '  </div>',
+    '</div>'
+  ].join('\n');
+
+  var siteHeader = document.querySelector('.site-header');
+  if (siteHeader) { siteHeader.innerHTML = headerHTML; }
+
+  var siteFooter = document.querySelector('.site-footer');
+  if (siteFooter) { siteFooter.innerHTML = footerHTML; }
+
   /* ── Mobile Nav Toggle ──────────────────────────────────── */
-  const toggle = document.getElementById('nav-toggle');
-  const nav    = document.getElementById('primary-nav');
+  var toggle = document.getElementById('nav-toggle');
+  var nav    = document.getElementById('primary-nav');
 
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
-      const isOpen = nav.classList.toggle('is-open');
+      var isOpen = nav.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', String(isOpen));
     });
 
-    /* Close on Escape */
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && nav.classList.contains('is-open')) {
         nav.classList.remove('is-open');
@@ -24,7 +85,6 @@
       }
     });
 
-    /* Close when a nav link is activated */
     nav.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         nav.classList.remove('is-open');
@@ -34,23 +94,22 @@
   }
 
   /* ── Mark active nav link ───────────────────────────────── */
-  const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+  var currentPath = window.location.pathname.replace(/\/$/, '') || '/';
   document.querySelectorAll('.site-nav a').forEach(function (link) {
-    const href = (link.getAttribute('href') || '').replace(/\/$/, '') || '/';
+    var href = (link.getAttribute('href') || '').replace(/\/$/, '') || '/';
     if (href === currentPath) {
       link.setAttribute('aria-current', 'page');
     }
   });
 
   /* ── Contact Form ───────────────────────────────────────── */
-  const form = document.getElementById('contact-form');
+  var form = document.getElementById('contact-form');
   if (form) {
-    const liveRegion = document.getElementById('live-region');
+    var liveRegion = document.getElementById('live-region');
 
     function announce(msg) {
       if (liveRegion) {
         liveRegion.textContent = '';
-        /* Force re-read by toggling */
         requestAnimationFrame(function () {
           liveRegion.textContent = msg;
         });
@@ -59,8 +118,8 @@
 
     function showError(input, msg) {
       input.setAttribute('aria-invalid', 'true');
-      const errId = input.getAttribute('aria-describedby');
-      const errEl = errId ? document.getElementById(errId) : null;
+      var errId = input.getAttribute('aria-describedby');
+      var errEl = errId ? document.getElementById(errId) : null;
       if (errEl) {
         errEl.textContent = msg;
         errEl.classList.add('is-visible');
@@ -69,15 +128,14 @@
 
     function clearError(input) {
       input.removeAttribute('aria-invalid');
-      const errId = input.getAttribute('aria-describedby');
-      const errEl = errId ? document.getElementById(errId) : null;
+      var errId = input.getAttribute('aria-describedby');
+      var errEl = errId ? document.getElementById(errId) : null;
       if (errEl) {
         errEl.textContent = '';
         errEl.classList.remove('is-visible');
       }
     }
 
-    /* Inline validation on blur */
     form.querySelectorAll('[required]').forEach(function (input) {
       input.addEventListener('blur', function () {
         if (!input.value.trim()) {
@@ -90,16 +148,14 @@
       });
 
       input.addEventListener('input', function () {
-        if (input.value.trim()) {
-          clearError(input);
-        }
+        if (input.value.trim()) { clearError(input); }
       });
     });
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      let valid = true;
-      let firstInvalid = null;
+      var valid = true;
+      var firstInvalid = null;
 
       form.querySelectorAll('[required]').forEach(function (input) {
         clearError(input);
@@ -120,7 +176,7 @@
         return;
       }
 
-      const submitBtn = form.querySelector('[type="submit"]');
+      var submitBtn = form.querySelector('[type="submit"]');
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending…';
 
@@ -131,7 +187,7 @@
       })
       .then(function (res) {
         if (res.ok) {
-          const successEl = document.getElementById('form-success');
+          var successEl = document.getElementById('form-success');
           if (successEl) {
             successEl.classList.add('is-visible');
             successEl.focus();
