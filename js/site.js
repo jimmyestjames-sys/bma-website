@@ -91,6 +91,13 @@
         toggle.setAttribute('aria-expanded', 'false');
       });
     });
+
+    nav.addEventListener('focusout', function (e) {
+      if (nav.classList.contains('is-open') && !nav.contains(e.relatedTarget)) {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
   }
 
   /* ── Mark active nav link ───────────────────────────────── */
