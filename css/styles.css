@@ -6,63 +6,63 @@
 /* ── Halyard Font Faces ──────────────────────────────────── */
 @font-face {
   font-family: 'Halyard Display';
-  src: url('/fonts/HalyardDisplay-Light.otf') format('opentype');
+  src: url('../fonts/HalyardDisplay-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Display';
-  src: url('/fonts/HalyardDisplay-Regular.otf') format('opentype');
+  src: url('../fonts/HalyardDisplay-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Display';
-  src: url('/fonts/HalyardDisplay-Italic.otf') format('opentype');
+  src: url('../fonts/HalyardDisplay-Italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Display';
-  src: url('/fonts/HalyardDisplay-Medium.otf') format('opentype');
+  src: url('../fonts/HalyardDisplay-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Display';
-  src: url('/fonts/HalyardDisplay-MediumItalic.otf') format('opentype');
+  src: url('../fonts/HalyardDisplay-MediumItalic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Display';
-  src: url('/fonts/HalyardDisplay-SemiBold.otf') format('opentype');
+  src: url('../fonts/HalyardDisplay-SemiBold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Display';
-  src: url('/fonts/HalyardDisplay-SemiBoldItalic.otf') format('opentype');
+  src: url('../fonts/HalyardDisplay-SemiBoldItalic.otf') format('opentype');
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Display';
-  src: url('/fonts/HalyardDisplay-Bold.otf') format('opentype');
+  src: url('../fonts/HalyardDisplay-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Display';
-  src: url('/fonts/HalyardDisplay-BoldItalic.otf') format('opentype');
+  src: url('../fonts/HalyardDisplay-BoldItalic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -70,49 +70,49 @@
 
 @font-face {
   font-family: 'Halyard Text';
-  src: url('/fonts/HalyardText-Light.otf') format('opentype');
+  src: url('../fonts/HalyardText-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Text';
-  src: url('/fonts/HalyardText-Regular.otf') format('opentype');
+  src: url('../fonts/HalyardText-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Text';
-  src: url('/fonts/HalyardText-Italic.otf') format('opentype');
+  src: url('../fonts/HalyardText-Italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Text';
-  src: url('/fonts/HalyardText-Medium.otf') format('opentype');
+  src: url('../fonts/HalyardText-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Text';
-  src: url('/fonts/HalyardText-MediumItalic.otf') format('opentype');
+  src: url('../fonts/HalyardText-MediumItalic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Text';
-  src: url('/fonts/HalyardText-Bold.otf') format('opentype');
+  src: url('../fonts/HalyardText-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Halyard Text';
-  src: url('/fonts/HalyardText-BoldItalic.otf') format('opentype');
+  src: url('../fonts/HalyardText-BoldItalic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
