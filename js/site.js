@@ -120,14 +120,35 @@
         return;
       }
 
-      /* Simulate success — replace with your form endpoint (Formspree, Netlify Forms, etc.) */
-      const successEl = document.getElementById('form-success');
-      if (successEl) {
-        successEl.classList.add('is-visible');
-        successEl.focus();
-        announce('Your message was sent successfully. We\'ll be in touch within one business day.');
-        form.reset();
-      }
+      const submitBtn = form.querySelector('[type="submit"]');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      fetch('https://formspree.io/f/xykaveor', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      })
+      .then(function (res) {
+        if (res.ok) {
+          const successEl = document.getElementById('form-success');
+          if (successEl) {
+            successEl.classList.add('is-visible');
+            successEl.focus();
+            announce('Your message was sent successfully. We\'ll be in touch within one business day.');
+            form.reset();
+          }
+        } else {
+          announce('Something went wrong. Please email us directly at contact@bemya11y.com.');
+        }
+      })
+      .catch(function () {
+        announce('Something went wrong. Please email us directly at contact@bemya11y.com.');
+      })
+      .finally(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+      });
     });
   }
 
