@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — BE MY A11Y</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="/" class="site-logo" aria-label="BE MY A11Y — Home">
+        <span class="site-logo-text">BE MY A11Y</span>
+      </a>
+      <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="/services.html">Services</a>
+        <a href="/accessibility.html">Accessibility</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="btn btn-primary nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" style="min-height: 60vh; display: flex; align-items: center;">
+    <div class="container" style="text-align: center; padding-block: var(--space-24);">
+      <p class="section-label">404 — Page Not Found</p>
+      <h1 style="font-size: clamp(var(--text-4xl), 8vw, 7rem); line-height: 1; margin-bottom: var(--space-6);">Oops.</h1>
+      <p class="lead" style="margin-inline: auto; margin-bottom: var(--space-10);">
+        We couldn't find that page — it may have moved or never existed.<br>
+        Let's get you back on track.
+      </p>
+      <div class="btn-group" style="justify-content: center;">
+        <a href="/" class="btn btn-primary">Go Home</a>
+        <a href="/contact.html" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-meta" style="border-top: none; padding-top: 0;">
+        <p><small>&copy; 2026 BE MY A11Y, LLC. All rights reserved.</small></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — BE MY A11Y</title>
+  <meta name="description" content="BE MY A11Y was built on the belief that inclusive design is a foundation, not a feature. Learn our story, our founder, and the principles we never compromise.">
+
+  <meta property="og:title" content="About — BE MY A11Y">
+  <meta property="og:description" content="Built by someone who believes the web should be for everyone.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bemya11y.com/about.html">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="live-region" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ── Header ──────────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="/" class="site-logo" aria-label="BE MY A11Y — Home">
+        <span class="site-logo-text">BE MY A11Y</span>
+      </a>
+
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+          <line x1="3" y1="6"  x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="/services.html">Services</a>
+        <a href="/accessibility.html">Accessibility</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="btn btn-primary nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Main ─────────────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <p class="section-label" style="color: #6fa3ff;">Our Story</p>
+        <h1 id="hero-heading">Built by someone who believes<br>the web should be for <em>everyone</em></h1>
+        <p class="lead">
+          BE MY A11Y started with a simple conviction: that inclusive design isn't a
+          feature — it's a foundation. Here's how we got here, and where we're going.
+        </p>
+      </div>
+    </section>
+
+    <!-- How We Started -->
+    <section class="section" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <p class="section-label">How We Started</p>
+            <h2 id="story-heading">A problem worth solving</h2>
+            <p style="margin-top: var(--space-4); color: var(--color-gray-600);">
+              BE MY A11Y was founded on the belief that too many businesses were leaving
+              people behind — not out of malice, but because no one had shown them a better
+              way. Every inaccessible website is a door slammed in someone's face.
+            </p>
+            <p style="margin-top: var(--space-4); color: var(--color-gray-600);">
+              We set out to change that. Starting with small businesses and growing from
+              there, BE MY A11Y became a trusted partner for organizations that wanted to
+              do right by every person who visited their digital front door.
+            </p>
+            <p style="margin-top: var(--space-4); color: var(--color-gray-600);">
+              Today, we combine that original mission with the power of modern AI —
+              making accessibility faster, smarter, and more achievable than ever before.
+            </p>
+          </div>
+          <div style="background: var(--color-gray-100); border-radius: var(--radius-xl); min-height: 320px; display: flex; align-items: center; justify-content: center;">
+            <!-- Replace with an <img> tag when your photo is ready -->
+            <p style="color: var(--color-gray-400); font-size: var(--text-sm); text-align: center; padding: var(--space-8);">
+              Add your photo here.<br>
+              Replace this div with an &lt;img&gt; tag.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Principles -->
+    <section class="section section-alt" aria-labelledby="principles-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">What We Stand For</p>
+          <h2 id="principles-heading">The principles we never compromise</h2>
+          <p>Tools change. Technology changes. These don't.</p>
+        </div>
+
+        <div class="principles-list" style="max-width: 720px;">
+          <div class="principle">
+            <h3>Our Strategy</h3>
+            <p>Web inclusivity is our foundation. By removing technical barriers we
+            strengthen your online presence, expand your market, and ensure every
+            visitor — regardless of ability or background — can navigate with ease.</p>
+          </div>
+          <div class="principle">
+            <h3>Our Mission</h3>
+            <p>Inclusive design benefits all people. Society functions at optimal efficiency
+            when individuals of all backgrounds and limitations have equal access to
+            information. Education, equity, and engagement — that's what we build toward.</p>
+          </div>
+          <div class="principle">
+            <h3>Our Commitment</h3>
+            <p>Every AI capability we adopt serves one goal: making the digital world more
+            open to everyone. We review every automated finding with human expertise —
+            because context matters, and people matter more than process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder -->
+    <section class="section" aria-labelledby="founder-heading">
+      <div class="container">
+        <p class="section-label">Meet the Founder</p>
+        <h2 id="founder-heading" class="sr-only">Founder</h2>
+
+        <div class="founder-card" style="max-width: 640px;">
+          <div style="display: flex; align-items: center; gap: var(--space-5);">
+            <!-- Replace with your headshot image -->
+            <div class="founder-avatar" aria-hidden="true">J</div>
+            <div>
+              <h3 style="font-size: var(--text-2xl); margin-bottom: var(--space-1);">James</h3>
+              <p style="color: var(--color-gray-600); font-size: var(--text-sm);">Founder &amp; Accessibility Consultant, BE MY A11Y</p>
+            </div>
+          </div>
+
+          <p style="color: var(--color-gray-600);">
+            James started BE MY A11Y after seeing firsthand how often digital accessibility
+            was treated as an afterthought — a checkbox at the end of a project instead of
+            a principle baked in from the start.
+          </p>
+          <p style="color: var(--color-gray-600);">
+            With a background in web design and a deep commitment to inclusive design,
+            James built BE MY A11Y to be the partner he wished existed: one that combines
+            real expertise with honest, practical guidance and now, the best that AI has
+            to offer.
+          </p>
+          <a href="mailto:james@bemya11y.com" class="btn btn-outline" style="align-self: flex-start;">
+            james@bemya11y.com →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logo Evolution -->
+    <section class="section section-alt" aria-labelledby="evolution-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Brand Evolution</p>
+          <h2 id="evolution-heading">The logo over the years</h2>
+          <p>Every iteration reflects where we were — and where we were headed.</p>
+        </div>
+
+        <div class="logo-timeline">
+          <div class="logo-year">
+            <p class="year-label">2021</p>
+            <!-- Replace with logo image -->
+            <div class="logo-placeholder" aria-label="2021 logo placeholder">Add logo</div>
+            <p class="year-title">The Original</p>
+            <p>Where it all started.</p>
+          </div>
+          <div class="logo-year">
+            <p class="year-label">2022</p>
+            <div class="logo-placeholder" aria-label="2022 logo placeholder">Add logo</div>
+            <p class="year-title">First Refresh</p>
+            <p>Refining the identity.</p>
+          </div>
+          <div class="logo-year">
+            <p class="year-label">2023</p>
+            <div class="logo-placeholder" aria-label="2023 logo placeholder">Add logo</div>
+            <p class="year-title">Growing Up</p>
+            <p>Bolder, clearer, more confident.</p>
+          </div>
+          <div class="logo-year">
+            <p class="year-label">Current</p>
+            <div class="logo-placeholder" aria-label="Current logo placeholder">Add logo</div>
+            <p class="year-title">Current Mark</p>
+            <p>AI-forward. Inclusive by design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Want to be part of what comes <em>next</em>?</h2>
+        <p>
+          We're always looking for clients who care about doing things right. Let's talk
+          about your project and how we can build something better — together.
+        </p>
+        <div class="btn-group" style="justify-content: center; margin-bottom: var(--space-5);">
+          <a href="/contact.html" class="btn btn-white">Work With Us</a>
+          <a href="/services.html" class="btn btn-outline" style="color: rgba(255,255,255,.85); border-color: rgba(255,255,255,.5);">See Our Services</a>
+        </div>
+        <p style="margin: 0; text-align: center;">
+          Or email us at
+          <a href="mailto:contact@bemya11y.com" class="email-link">contact@bemya11y.com</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="site-logo-text">BE MY A11Y</p>
+          <p>Inclusive design and AI-powered accessibility services — built to make the web work for everyone.</p>
+        </div>
+
+        <nav aria-label="Footer pages">
+          <div class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/accessibility.html">Accessibility</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@bemya11y.com">contact@bemya11y.com</a></li>
+            <li>Nationwide — remote-friendly</li>
+            <li>Response within 1 business day</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <p><small>&copy; 2026 BE MY A11Y, LLC. All rights reserved.</small></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/site.js"></script>
+</body>
+</html>

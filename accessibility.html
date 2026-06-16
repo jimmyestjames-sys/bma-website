@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Accessibility Explained — BE MY A11Y</title>
+  <meta name="description" content="Learn what web accessibility is, why it matters legally and commercially, and how BE MY A11Y can help your business meet WCAG, ADA, and Section 508 standards.">
+
+  <meta property="og:title" content="Web Accessibility Explained — BE MY A11Y">
+  <meta property="og:description" content="Accessibility isn't optional. It's opportunity. Learn why — and what to do about it.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bemya11y.com/accessibility.html">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="live-region" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ── Header ──────────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="/" class="site-logo" aria-label="BE MY A11Y — Home">
+        <span class="site-logo-text">BE MY A11Y</span>
+      </a>
+
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+          <line x1="3" y1="6"  x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="/services.html">Services</a>
+        <a href="/accessibility.html">Accessibility</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="btn btn-primary nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Main ─────────────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <p class="section-label" style="color: #6fa3ff;">Web Accessibility Explained</p>
+        <h1 id="hero-heading">Accessibility isn't optional.<br><em>It's opportunity.</em></h1>
+        <p class="lead">
+          Over a billion people worldwide live with some form of disability. When your website
+          isn't accessible, you're not just excluding users — you're leaving revenue, reach,
+          and reputation on the table.
+        </p>
+        <div class="btn-group">
+          <a href="/contact.html" class="btn btn-white">Talk to an Accessibility Expert</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Is It -->
+    <section class="section" aria-labelledby="basics-heading">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <p class="section-label">The Basics</p>
+            <h2 id="basics-heading">What is web accessibility?</h2>
+          </div>
+          <div>
+            <p>
+              Web accessibility means designing and building digital experiences that anyone
+              can use — including people with visual, auditory, motor, or cognitive disabilities.
+              It's the practice of removing barriers so that everyone has equal access to
+              information and functionality online.
+            </p>
+            <p style="margin-top: var(--space-4);">
+              The global standard for web accessibility is the
+              <strong>Web Content Accessibility Guidelines (WCAG)</strong> — a set of technical
+              criteria organized around four principles: content must be Perceivable, Operable,
+              Understandable, and Robust. WCAG 2.1 Level AA is the benchmark recognized by
+              the ADA, Section 508, and most international regulations.
+            </p>
+            <p style="margin-top: var(--space-4);">
+              In plain terms: accessible websites work with screen readers, keyboard
+              navigation, captions, and high-contrast displays — and they're easier for
+              everyone to use as a result.
+            </p>
+          </div>
+        </div>
+
+        <!-- Disability Types -->
+        <div class="disability-grid" style="margin-top: var(--space-12);">
+          <article class="disability-card">
+            <h3>Visual Disabilities</h3>
+            <p>Blindness, low vision, and color blindness — addressed through alt text, contrast ratios, and screen reader compatibility.</p>
+          </article>
+          <article class="disability-card">
+            <h3>Auditory Disabilities</h3>
+            <p>Deafness and hearing loss — addressed through captions, transcripts, and visual alternatives to audio content.</p>
+          </article>
+          <article class="disability-card">
+            <h3>Motor Disabilities</h3>
+            <p>Limited mobility and motor control — addressed through full keyboard navigability and large, easy-to-activate targets.</p>
+          </article>
+          <article class="disability-card">
+            <h3>Cognitive Disabilities</h3>
+            <p>Dyslexia, ADHD, and cognitive differences — addressed through clear language, predictable layouts, and reduced motion.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section section-alt" aria-labelledby="numbers-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">By the Numbers</p>
+          <h2 id="numbers-heading">The scale of the opportunity</h2>
+          <p>These aren't edge cases. This is a significant, underserved audience actively
+          seeking the products and services you provide.</p>
+        </div>
+
+        <div class="stats-grid">
+          <div>
+            <span class="stat-number">1.3B</span>
+            <span class="stat-label">People globally live with a significant disability — roughly 1 in 6 of the world's population.</span>
+          </div>
+          <div>
+            <span class="stat-number">$13T</span>
+            <span class="stat-label">Annual disposable income controlled by people with disabilities and their immediate circles of influence.</span>
+          </div>
+          <div>
+            <span class="stat-number" aria-label="Over 70 percent">70%+</span>
+            <span class="stat-label">Of users with disabilities will leave a website immediately if it's too difficult to use.</span>
+          </div>
+          <div>
+            <span class="stat-number" aria-label="97 percent">97%</span>
+            <span class="stat-label">Of the top one million websites have detectable WCAG failures — the gap is enormous, and so is the competitive advantage.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal -->
+    <section class="section" aria-labelledby="legal-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Legal Landscape</p>
+          <h2 id="legal-heading">The standards that govern digital access</h2>
+          <p>
+            Accessibility is not just a best practice — in many contexts it's a legal
+            requirement. Here are the key frameworks we work with.
+          </p>
+        </div>
+
+        <div class="law-list">
+          <article class="law-item">
+            <p class="law-scope">Global Standard</p>
+            <h3>WCAG 2.1 (Web Content Accessibility Guidelines)</h3>
+            <p>Published by the W3C, WCAG is the international benchmark for web
+            accessibility. Level AA conformance is the most widely required threshold
+            and the one we target in all our work.</p>
+          </article>
+
+          <article class="law-item">
+            <p class="law-scope">United States</p>
+            <h3>Americans with Disabilities Act (ADA)</h3>
+            <p>Courts have increasingly applied the ADA — originally written for physical
+            spaces — to websites and digital products. ADA website lawsuits have grown
+            significantly year over year. Compliance is protection.</p>
+          </article>
+
+          <article class="law-item">
+            <p class="law-scope">Federal &amp; Government</p>
+            <h3>Section 508 of the Rehabilitation Act</h3>
+            <p>Federal agencies and organizations that receive federal funding are required
+            by law to make their electronic and information technology accessible to
+            people with disabilities.</p>
+          </article>
+
+          <article class="law-item">
+            <p class="law-scope">European Union</p>
+            <h3>European Accessibility Act (EAA)</h3>
+            <p>Effective June 2025, the EAA requires businesses operating in the EU to meet
+            accessibility standards for key digital products and services. Global businesses
+            need to act now.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Case -->
+    <section class="section section-alt" aria-labelledby="business-heading">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <p class="section-label">The Business Case</p>
+            <h2 id="business-heading">Inclusive design is good business</h2>
+            <p style="margin-top: var(--space-4); color: var(--color-gray-600);">
+              Beyond the legal and moral imperative, accessible design consistently delivers
+              measurable returns. The features built for users with disabilities — clear
+              navigation, readable text, keyboard support — improve the experience for everyone.
+            </p>
+            <p style="margin-top: var(--space-4); color: var(--color-gray-600);">
+              Search engines index accessible content more effectively. Accessible sites load
+              faster. And a reputation for inclusivity drives loyalty in ways that paid
+              advertising can't.
+            </p>
+          </div>
+          <div>
+            <ul class="benefits-list" aria-label="Benefits of accessible design">
+              <li class="benefit-item">
+                <div>
+                  <strong>Expanded market reach</strong>
+                  Tap into an audience of 1.3 billion people who need what you offer.
+                </div>
+              </li>
+              <li class="benefit-item">
+                <div>
+                  <strong>Reduced legal risk</strong>
+                  Proactive compliance is far less expensive than litigation.
+                </div>
+              </li>
+              <li class="benefit-item">
+                <div>
+                  <strong>Improved SEO</strong>
+                  Alt text, semantic HTML, and clear structure all boost search rankings.
+                </div>
+              </li>
+              <li class="benefit-item">
+                <div>
+                  <strong>Better UX for everyone</strong>
+                  Curb cuts help wheelchair users and parents with strollers alike.
+                </div>
+              </li>
+              <li class="benefit-item">
+                <div>
+                  <strong>Brand reputation</strong>
+                  Consumers increasingly choose businesses that demonstrate social responsibility.
+                </div>
+              </li>
+              <li class="benefit-item">
+                <div>
+                  <strong>Future-proofing</strong>
+                  Building right today means lower remediation costs as standards evolve.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Approach -->
+    <section class="section" aria-labelledby="approach-heading">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <p class="section-label">Our Approach</p>
+            <h2 id="approach-heading">How AI is transforming accessibility work</h2>
+            <p style="margin-top: var(--space-4); color: var(--color-gray-600);">
+              AI tools now allow us to scan entire codebases for accessibility issues in minutes,
+              generate accessible alternative text at scale, and model how users with different
+              disabilities experience a digital product.
+            </p>
+            <p style="margin-top: var(--space-4); color: var(--color-gray-600);">
+              At BE MY A11Y, we pair AI-powered efficiency with human expertise — so you get
+              speed without sacrificing accuracy or context. Every automated finding is reviewed
+              by a person who understands what it means in practice.
+            </p>
+            <div style="margin-top: var(--space-8);">
+              <a href="/services.html" class="btn btn-primary">See Our Services</a>
+            </div>
+          </div>
+          <div style="background: var(--color-gray-100); border-radius: var(--radius-xl); padding: var(--space-10); display: grid; gap: var(--space-6);">
+            <div>
+              <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Speed at scale</h3>
+              <p style="font-size: var(--text-sm); color: var(--color-gray-600);">AI scans surface hundreds of potential barriers across an entire codebase in minutes — work that would take days manually.</p>
+            </div>
+            <div>
+              <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Human review, always</h3>
+              <p style="font-size: var(--text-sm); color: var(--color-gray-600);">Every automated finding is reviewed by an accessibility expert who understands context, intent, and real-world impact.</p>
+            </div>
+            <div>
+              <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Continuous improvement</h3>
+              <p style="font-size: var(--text-sm); color: var(--color-gray-600);">Automated monitoring catches regressions as your product evolves — keeping compliance from sliding after launch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Ready to make your site <em>accessible</em>?</h2>
+        <p>
+          Start with a free consultation. We'll assess where you are, explain what's required,
+          and map a practical path forward — no jargon, no pressure.
+        </p>
+        <div class="btn-group" style="justify-content: center; margin-bottom: var(--space-5);">
+          <a href="/contact.html" class="btn btn-white">Get a Free Accessibility Assessment</a>
+        </div>
+        <p style="margin: 0; text-align: center;">
+          Questions first?
+          <a href="mailto:contact@bemya11y.com" class="email-link">contact@bemya11y.com</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="site-logo-text">BE MY A11Y</p>
+          <p>Inclusive design and AI-powered accessibility services — built to make the web work for everyone.</p>
+        </div>
+
+        <nav aria-label="Footer pages">
+          <div class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/accessibility.html">Accessibility</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@bemya11y.com">contact@bemya11y.com</a></li>
+            <li>Nationwide — remote-friendly</li>
+            <li>Response within 1 business day</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <p><small>&copy; 2026 BE MY A11Y, LLC. All rights reserved.</small></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/site.js"></script>
+</body>
+</html>

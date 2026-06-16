@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BE MY A11Y — Inclusive Design &amp; Digital Accessibility</title>
+  <meta name="description" content="BE MY A11Y designs accessible websites and software for small businesses, using UI/UX best practices to improve usability, broaden audience reach, and ensure inclusive, easy-to-navigate digital experiences.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BE MY A11Y">
+  <meta property="og:description" content="Inclusive design and AI-powered accessibility services — built to make the web work for everyone.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bemya11y.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BE MY A11Y, LLC",
+    "url": "https://bemya11y.com",
+    "email": "contact@bemya11y.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1011 Constitution Way",
+      "addressLocality": "Cumming",
+      "addressRegion": "GA",
+      "postalCode": "30040",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Live Region for dynamic announcements -->
+  <div id="live-region" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ── Header ──────────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="/" class="site-logo" aria-label="BE MY A11Y — Home">
+        <span class="site-logo-text">BE MY A11Y</span>
+      </a>
+
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+          <line x1="3" y1="6"  x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="/services.html">Services</a>
+        <a href="/accessibility.html">Accessibility</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="btn btn-primary nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Main ─────────────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <p class="section-label" style="color: #6fa3ff;">Inclusive Design &amp; Digital Accessibility</p>
+        <h1 id="hero-heading">
+          The internet should<br>
+          <em>work for everyone</em>
+        </h1>
+        <p class="lead">
+          BE MY A11Y is a web design and software company that pairs deep accessibility
+          expertise with modern tools — so your digital presence grows without leaving
+          anyone behind.
+        </p>
+        <div class="btn-group">
+          <a href="/contact.html" class="btn btn-white">Get Started</a>
+          <a href="/services.html" class="btn btn-outline" style="color: rgba(255,255,255,.85); border-color: rgba(255,255,255,.5);">See What We Do</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="section" aria-labelledby="who-heading">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <p class="section-label">Who We Are</p>
+            <h2 id="who-heading">Built on one unshakeable belief</h2>
+          </div>
+          <div>
+            <p class="lead">
+              BE MY A11Y is more than a web design firm — we're advocates for a more open
+              internet. Since day one, our foundation has been web inclusivity: the conviction
+              that removing technical barriers is the single most powerful way to grow your
+              business and serve your audience.
+            </p>
+            <p style="margin-top: 1rem; color: var(--color-gray-600);">
+              Today we bring that same conviction to the age of AI — using it to audit faster,
+              design smarter, and make accessibility achievable at any scale.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid" style="margin-top: var(--space-16);" aria-label="Accessibility by the numbers">
+          <div class="stat">
+            <span class="stat-number">1 in 4</span>
+            <span class="stat-label">U.S. adults live with a disability — they're your customers too.</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">$13T</span>
+            <span class="stat-label">Annual spending power of people with disabilities globally.</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" aria-label="Many">~70%</span>
+            <span class="stat-label">Of users with disabilities leave a site that isn't accessible.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="section section-alt" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">What We Do</p>
+          <h2 id="services-heading">Everything your digital presence needs</h2>
+          <p>
+            From first impressions to ongoing compliance, we cover the full lifecycle of
+            accessible web experiences.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 21V9"/>
+              </svg>
+            </div>
+            <h3>Web Design &amp; Revamp</h3>
+            <p>Modern, beautiful sites built accessibility-first — so you never have to retrofit compliance after launch.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35M11 8v3l2 2"/>
+              </svg>
+            </div>
+            <h3>Accessibility Audits</h3>
+            <p>Comprehensive WCAG reviews of your existing site or app, delivered with prioritized, actionable remediation plans.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Software Monitoring</h3>
+            <p>Ongoing vendor oversight and progress tracking so your digital solution stays compliant as it evolves.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9.663 17h4.673M12 3v1m6.364 1.636-.707.707M21 12h-1M4 12H3m3.343-5.657-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+              </svg>
+            </div>
+            <h3>AI-Assisted Scanning</h3>
+            <p>Automated barrier detection powered by AI — catching issues faster and more thoroughly than manual review alone.</p>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-10);">
+          <a href="/services.html" class="btn btn-primary">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Perspective -->
+    <section class="section" aria-labelledby="ai-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Our AI Perspective</p>
+          <h2 id="ai-heading">Why we embrace AI — without losing our humanity</h2>
+          <p style="max-width: 72ch;">
+            AI is the most powerful tool for accessibility we've seen in a generation. It
+            automates audits, surfaces barriers faster, and scales inclusive experiences in
+            ways that weren't possible before. We don't see it as a replacement for
+            human-centered design — we see it as the engine that lets us do more of it.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card" style="border-top: 3px solid var(--color-accent);">
+            <h3 style="font-size: var(--text-base);">Faster Audits</h3>
+            <p>AI flags barriers in minutes that would take days to surface manually.</p>
+          </div>
+          <div class="card" style="border-top: 3px solid var(--color-accent);">
+            <h3 style="font-size: var(--text-base);">Smarter Design</h3>
+            <p>Generative tools help us prototype and test inclusive layouts at speed.</p>
+          </div>
+          <div class="card" style="border-top: 3px solid var(--color-accent);">
+            <h3 style="font-size: var(--text-base);">Scalable Compliance</h3>
+            <p>Continuous monitoring that grows with your product — not just a one-time fix.</p>
+          </div>
+          <div class="card" style="border-top: 3px solid var(--color-accent);">
+            <h3 style="font-size: var(--text-base);">Human at the Core</h3>
+            <p>Every AI output is reviewed by accessibility experts who understand context.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Principles -->
+    <section class="section section-alt" aria-labelledby="principles-heading">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <p class="section-label">Our Principles</p>
+            <h2 id="principles-heading">The foundation we never compromise</h2>
+            <p style="margin-top: var(--space-4); color: var(--color-gray-600);">Tools and technology change. These don't.</p>
+          </div>
+          <div class="principles-list">
+            <div class="principle">
+              <h3>Our Strategy</h3>
+              <p>Web inclusivity is our foundation. By removing technical barriers we strengthen
+              your online presence, expand your market, and ensure every visitor — regardless
+              of ability or background — can navigate with ease.</p>
+            </div>
+            <div class="principle">
+              <h3>Our Mission</h3>
+              <p>Inclusive design benefits all people. Society functions at optimal efficiency
+              when individuals of all backgrounds and limitations have equal access to
+              information. Education, equity, and engagement — that's what we build toward.</p>
+            </div>
+            <div class="principle">
+              <h3>Our Commitment</h3>
+              <p>Improving digital spaces creates greater engagement, productivity, and market
+              potential. We strive to educate and empower — making the world a more accessible
+              place, starting with you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Ready to build something <em>everyone</em> can use?</h2>
+        <p>
+          Let's talk about your goals — whether that's a full redesign, a compliance audit,
+          or an AI-powered accessibility roadmap.
+        </p>
+        <div class="btn-group" style="justify-content: center; margin-bottom: var(--space-5);">
+          <a href="/contact.html" class="btn btn-white">Work With Us</a>
+        </div>
+        <p style="margin: 0; text-align: center;">
+          Or email us directly at
+          <a href="mailto:contact@bemya11y.com" class="email-link" style="color: rgba(255,255,255,.75);">contact@bemya11y.com</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="site-logo-text">BE MY A11Y</p>
+          <p>Inclusive design and AI-powered accessibility services — built to make the web work for everyone.</p>
+        </div>
+
+        <nav aria-label="Footer pages">
+          <div class="footer-col">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/accessibility.html">Accessibility</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@bemya11y.com">contact@bemya11y.com</a></li>
+            <li>Nationwide — remote-friendly</li>
+            <li>Response within 1 business day</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <p><small>&copy; 2026 BE MY A11Y, LLC. All rights reserved.</small></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/site.js"></script>
+</body>
+</html>
