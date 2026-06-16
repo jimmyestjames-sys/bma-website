@@ -353,6 +353,19 @@ p { max-width: 68ch; }
   color: var(--color-white);
 }
 
+.btn-outline-white {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.btn-outline-white:hover,
+.btn-outline-white:focus-visible {
+  background-color: var(--color-white);
+  color: var(--color-accent);
+  border-color: var(--color-white);
+}
+
 .btn-ghost {
   background-color: transparent;
   color: var(--color-black);
