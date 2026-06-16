@@ -1,8 +1,2 @@
 # Cloudflare Pages — _redirects
-# Squarespace URL patterns → clean HTML equivalents
-
-/services          /services.html    301
-/accessibility     /accessibility.html  301
-/about             /about.html       301
-/contact           /contact.html     301
-
+# Clean URLs are handled automatically by Cloudflare Pages (no rules needed).
