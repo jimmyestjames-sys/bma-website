@@ -56,7 +56,7 @@
     '    </div>',
     '  </div>',
     '  <div class="footer-meta">',
-    '    <p style="color:#000000;">&copy; 2026 BE MY A11Y, LLC. All rights reserved.</p>',
+    '    <p style="color:#000000!important;">&copy; 2026 BE MY A11Y, LLC. All rights reserved.</p>',
     '  </div>',
     '</div>'
   ].join('\n');
