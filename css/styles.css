@@ -864,7 +864,7 @@ p { max-width: 68ch; }
   max-width: 36ch;
 }
 
-.footer-col h4 {
+.footer-col h3 {
   font-size: var(--text-sm);
   font-weight: 700;
   text-transform: uppercase;
