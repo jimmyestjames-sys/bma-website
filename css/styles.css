@@ -1272,3 +1272,33 @@ textarea.form-control {
   height: 1px;
   overflow: hidden;
 }
+
+/* ── Large-screen enhancements ───────────────────────────── */
+@media (min-width: 1440px) {
+  :root {
+    --max-width:     1380px;
+    --header-height: 88px;
+  }
+  .container     { padding-inline: var(--space-10); }
+  .site-logo img { height: 60px; }
+  .footer-logo   { height: 68px; }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --max-width:     1820px;
+    --header-height: 96px;
+  }
+  .container     { padding-inline: var(--space-12); }
+  .site-logo img { height: 68px; }
+  .footer-logo   { height: 76px; }
+}
+
+@media (min-width: 2560px) {
+  :root {
+    --max-width:     2360px;
+    --header-height: 104px;
+  }
+  .site-logo img { height: 76px; }
+  .footer-logo   { height: 84px; }
+}
