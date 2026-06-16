@@ -1,4 +1,4 @@
-/* BE MY A11Y — site.js
+﻿/* BE MY A11Y — site.js
    Shared header/footer injection, mobile nav, contact form, live regions.
    No dependencies. */
 
@@ -56,7 +56,7 @@
     '    </div>',
     '  </div>',
     '  <div class="footer-meta">',
-    '    <p style="color:#000000!important;">&copy; 2026 BE MY A11Y, LLC. All rights reserved.</p>',
+    '    <p class="footer-copyright">&copy; 2026 BE MY A11Y, LLC. All rights reserved.</p>',
     '  </div>',
     '</div>'
   ].join('\n');
