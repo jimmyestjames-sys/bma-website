@@ -647,9 +647,10 @@ p { max-width: 68ch; }
 
 .stat-number {
   display: block;
-  font-family: var(--font-display);
+  font-family: 'Space Grotesk', var(--font-display), sans-serif;
   font-size: var(--text-5xl);
   font-weight: 700;
+  letter-spacing: -0.02em;
   line-height: 1;
   color: var(--color-accent);
   margin-bottom: var(--space-2);
