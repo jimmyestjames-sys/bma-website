@@ -413,7 +413,7 @@ p { max-width: 68ch; }
 }
 
 .site-logo img {
-  height: 48px;
+  height: 60px;
   width: auto;
 }
 
@@ -832,7 +832,7 @@ p { max-width: 68ch; }
 
 /* ── Footer ──────────────────────────────────────────────── */
 .footer-logo {
-  height: 56px;
+  height: 68px;
   width: auto;
   display: block;
   margin-bottom: var(--space-3);
@@ -970,7 +970,6 @@ p { max-width: 68ch; }
 .form-label .required-mark {
   color: var(--color-error);
   margin-left: var(--space-1);
-  aria-hidden: true;
 }
 
 .form-control {
@@ -1320,8 +1319,8 @@ textarea.form-control {
     --header-height: 88px;
   }
   .container     { padding-inline: var(--space-10); }
-  .site-logo img { height: 60px; }
-  .footer-logo   { height: 68px; }
+  .site-logo img { height: 72px; }
+  .footer-logo   { height: 80px; }
 }
 
 @media (min-width: 1920px) {
@@ -1330,8 +1329,8 @@ textarea.form-control {
     --header-height: 96px;
   }
   .container     { padding-inline: var(--space-12); }
-  .site-logo img { height: 68px; }
-  .footer-logo   { height: 76px; }
+  .site-logo img { height: 80px; }
+  .footer-logo   { height: 88px; }
 }
 
 @media (min-width: 2560px) {
@@ -1339,6 +1338,6 @@ textarea.form-control {
     --max-width:     2360px;
     --header-height: 104px;
   }
-  .site-logo img { height: 76px; }
-  .footer-logo   { height: 84px; }
+  .site-logo img { height: 88px; }
+  .footer-logo   { height: 96px; }
 }
