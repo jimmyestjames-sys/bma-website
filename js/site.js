@@ -49,7 +49,7 @@
     '    <div class="footer-col">',
     '      <h3>Contact</h3>',
     '      <ul>',
-    '        <li class="footer-contact-email"><a href="mailto:contact@bemya11y.com">contact@bemya11y.com</a></li>',
+    '        <li><a class="footer-contact-email" href="mailto:contact@bemya11y.com">contact@bemya11y.com</a></li>',
     '        <li>Nationwide — remote-friendly</li>',
     '        <li>Response within 1 business day</li>',
     '      </ul>',
