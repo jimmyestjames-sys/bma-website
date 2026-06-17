@@ -852,6 +852,9 @@ p { max-width: 68ch; }
   display: block;
   margin-bottom: var(--space-3);
 }
+.footer-contact-email{
+  font-weight: bold;
+}
 
 .site-footer {
   background-color: var(--color-gray-100);
