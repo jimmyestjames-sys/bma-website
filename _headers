@@ -20,3 +20,6 @@
 
 /images/*
   Cache-Control: public, max-age=2592000
+
+/content-control/*
+Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.squarespace-cdn.com data:; connect-src 'self'
