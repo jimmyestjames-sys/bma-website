@@ -7,7 +7,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://ajax.googleapis.com https://reachai.onrender.com https://static.cloudflareinsights.com 'sha256-jyAwiaTBq1WhQEcT2Vk5CImHO3W640o/tqSckM3FoKw=' 'sha256-kQ2rNbLe5WoJEoeFvsReyfY9q78TxKMkH54PHgF6iCo=' 'sha256-V6jfWfRTUvB58Wi+iRaIzloQ0MRXc4jTJaCVJEXb0oU='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://reachai.onrender.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io https://reachai.onrender.com
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://ajax.googleapis.com https://reachai.onrender.com https://static.cloudflareinsights.com 'sha256-jyAwiaTBq1WhQEcT2Vk5CImHO3W640o/tqSckM3FoKw=' 'sha256-kQ2rNbLe5WoJEoeFvsReyfY9q78TxKMkH54PHgF6iCo=' 'sha256-V6jfWfRTUvB58Wi+iRaIzloQ0MRXc4jTJaCVJEXb0oU=' 'sha256-KuVI8T2wg3rIX9FMLdw1y0kWaM4AYrFMURt/ISlRkt4='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://reachai.onrender.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io https://reachai.onrender.com
 
 # Cache static assets aggressively
 /css/*
