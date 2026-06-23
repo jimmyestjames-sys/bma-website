@@ -665,8 +665,20 @@ p { max-width: 68ch; }
 /* ── Cards Grid ──────────────────────────────────────────── */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--space-6);
+}
+
+@media (min-width: 540px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .card {
