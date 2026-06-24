@@ -622,6 +622,14 @@ p { max-width: 68ch; }
   color: rgba(255,255,255,.75);
 }
 
+.section-dark .card h3 {
+  color: var(--color-white);
+}
+
+.section-dark .card p {
+  color: rgba(255,255,255,.75);
+}
+
 .section-accent {
   background-color: var(--color-accent);
   color: var(--color-white);
